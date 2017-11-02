@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FechaApp</string>
+    <string name="dia">Dia</string>
+    <string name="mes">Mes</string>
+    <string name="nombreMes">Nombre del mes elegido</string>
+    <string name="year">Año</string>
+    <string name="hoy">Hoy</string>
+    <string name="muestra">Muestra</string>
+</resources>

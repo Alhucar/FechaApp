@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="hurtado.alvaro.fechaapp.FechaActivity">
+
+    <TextView
+        android:id="@+id/lbl_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dia"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/txt_dia"
+        android:layout_alignBottom="@+id/txt_dia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lbl_dia"
+        android:layout_toEndOf="@+id/lbl_dia" />
+
+    <Button
+        android:id="@+id/btn_menos"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_dia"
+        android:layout_alignBottom="@+id/txt_dia"
+        android:layout_toLeftOf="@+id/btn_mas"
+        android:layout_toStartOf="@+id/btn_mas"
+        android:text="1-"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_mas"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1+"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/btn_menos"
+        android:layout_alignBottom="@+id/btn_menos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_menos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/lbl_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mes"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/btn_mes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lbl_nombreMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_mes"
+        android:text="@string/nombreMes"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/txt_dia"
+        android:layout_alignEnd="@+id/txt_dia"
+        android:layout_toEndOf="@+id/lbl_year"
+        android:layout_alignLeft="@+id/txt_dia"
+        android:layout_alignStart="@+id/txt_dia" />
+
+    <TextView
+        android:id="@+id/lbl_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/txt_year"
+        android:layout_alignBottom="@+id/txt_year"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_nombreMes"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/lbl_nombreMes"
+        android:layout_alignStart="@+id/lbl_nombreMes" />
+
+    <Button
+        android:id="@+id/btn_diaActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/hoy" />
+
+    <Button
+        android:id="@+id/btn_muestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/muestra" />
+</RelativeLayout>
